@@ -1,84 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parastoo:wght@400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Savate:ital,wght@0,200..900;1,200..900&family=Sigmar+One&family=WDXL+Lubrifont+SC&display=swap');
-/*  font-family: "BBH Sans Bartle", sans-serif;
-    font-family: "Nunito", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');
+/* font-family: "Montserrat", sans-serif;   font-family: "Pacifico", cursive;   font-family: "Nunito", sans-serif; */
 
+/* Estructura movil */
 
-/* fondos de pantalla */
-
-.fondo-inicio {  
-    background-image: url('../assets/img/inicio_desktopFondo.png');
-    background-size: cover;
+.layout {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-/*
-.fondo-restaurante {
-    background-image: url("../assets/img/restaurante_desktopFondo.png");
-    background-size: cover;
+.header {
+    grid-area: header;
 }
 
-.fondo-nosotros {  
-    background-image: url('../assets/img/nosotros_desktopFondo.png');
-    background-size: cover;
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fondo-carta {  
-    background-image: url('../assets/img/carta_desktopFondo.png');
-    background-size: cover;
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fondo-contacto {  
-    background-image: url('../assets/img/contacto_desktopFondo.png');
-    background-size: cover;
+
+/* Ayuda visual  */
+/* .header {
+    border: 10px solid #e63946;
+}
+
+.main {
+    border: 10px solid #457b9d;
+}
+
+.footer {
+    border: 10px solid #fb8500;
 } */
 
 
-/* Navbar */
 
-li {
-    background-color: black;
+/* fondos de pantalla*/
+
+.fondo-inicio {
+    background-image: url('../assets/img/inicio_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Titulos y parrafos */
+.fondo-restaurante {
+    background-image: url('../assets/img/restaurante_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-h1, h2, h3, h4, h5, h6, p {
+.fondo-nosotros {
+    background-image: url('../assets/img/nosotros_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-carta {
+    background-image: url('../assets/img/carta_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-contacto {
+    background-image: url('../assets/img/contacto_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+
+.img-nav {
+    margin-right: 3%;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    gap: 10px;
+}
+
+.nav-link {
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+
+/* Main (Titulos y parrafos) */
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+h1 {
+    color: rgb(247, 243, 12);
+    font-family: "Pacifico", cursive;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 3%;
+    margin-top: 8%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: white;
     font-family: "Nunito", sans-serif;
 }
 
-h1 {
-  font-family: "BBH Sans Bartle", sans-serif;
-  text-align: center;
-  background-color: rgb(73, 70, 70);
+
+.centrado {
+    text-align: center;
+    width: 100%;
 }
 
-
-.recuadro {
-    background-color: black;
-}
-
-/* Botones */
-
-.boton-negro{
-  background-color: black;
-  color: white;
-}
-
-.boton-amarillo {
-  background-color: orange;
-  color: black;
-}
 
 .h2-inicio {
     background-color: white;
-    color:  black;
-    /* font-size: 70px; */
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin: 3%;
 }
 
-/* footer */
 
 
-footer {
-  background-color: black;
-  text-align: center;
-  color: white;
-} 
+/* Botones */
+
+.flex-botones {
+    display: inline-flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.boton-inicio {
+    border-radius: 26px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+/* footer  */
+
+.footer p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 2% auto;
+    display: inline-block;
+}
+
+
+
+/* Estructura tablet */
+
+/* @media (min-width: 768px) {
+    .layout {
+        grid-template-rows: minmax(70px, auto) 1fr minmax(70px, auto);
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+} */
+
+/* Estructura escritorio */
+
+@media (min-width: 1024px) {
+    .layout {
+        grid-template-rows: minmax(80px, auto) 1fr minmax(80px, auto);
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-top: 4%;
+    }
+
+    .h2-inicio {
+        font-size: 60px;
+        padding: 10px 34px;
+    }
+
+    .flex-botones {
+        gap: 10%;
+    }
+
+    .boton-inicio {
+        font-size: 18px;
+    }
+
+    .img-nav {
+        width: 45px;
+        height: 40px
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+
+}
