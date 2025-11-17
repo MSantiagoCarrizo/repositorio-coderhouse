@@ -56,7 +56,7 @@
 
 /* fondos de pantalla*/
 
-/* */ 
+
 .fondo-inicio {
     background-image: url('../assets/img/inicio_desktopFondo.png');
     background-size: cover;
@@ -97,6 +97,7 @@
     background-attachment: fixed;
 } */
 
+
 /* Navbar */
 
 .img-nav {
@@ -119,19 +120,6 @@
     padding-left: 30px;
 }
 
-/* GLOBAL */
-
-h2, h3, h4, h5, h6, p {
-    color: white;
-    font-family: "Nunito", sans-serif;
-    margin-bottom: 0;
-}
-
-
-.centrado {
-    text-align: center;
-    width: 100%;
-}
 
 /* INICIO  */
 
@@ -166,9 +154,10 @@ h1 {
     margin: 3%;
 }
 
+
 /* Botones */
 
-.flex-botones {
+.flex-botones-inicio {
     display: inline-flex;
     justify-content: center;
     gap: 4%;
@@ -181,16 +170,40 @@ h1 {
     font-family: "Nunito", sans-serif;
 }
 
-/* Carta */
+/* GLOBAL */
 
-.recuadro-carta {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0;
+}
+
+
+.centrado {
+    text-align: center;
+    width: 100%;
+}
+
+.recuadro-especial {
     display: inline-flex;
     flex-direction: column;
     padding: 12px;
-    border: 2px solid rgb(41, 43, 38);
+    border: 3px solid rgb(41, 43, 38);
 }
 
-.h3-carta {
+.boton-especial {
+    margin-top: 2%;
+}
+/* Carta */
+
+
+
+.h3-especial {
     margin: 7%;
     margin-left: 0;
 }
@@ -201,8 +214,32 @@ hr {
     margin: 4% 0;
 }
 
-.boton-carta {
-    margin-top: 2%;
+
+
+
+/* Contacto */
+
+.flex-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.flex-contacto-uno {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.flex-contacto-dos {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.i-redes {
+    color: white;
+    margin-left: 2%;
 }
 
 
@@ -233,9 +270,9 @@ hr {
     .nav-link {
         font-size: 20px;
     }
-    
+
     /* inicio */
-    
+
     h1 {
         font-size: 45px;
         margin-top: 4%;
@@ -258,4 +295,3 @@ hr {
 
 
 }
-
