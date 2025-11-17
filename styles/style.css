@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .footer {
@@ -47,9 +48,15 @@
 } */
 
 
+/* 
+    ----------------------IMPORTANTE -------------------------------
+    Poner hovers y pseudoclases a los links 
+*/
+
 
 /* fondos de pantalla*/
 
+/* */ 
 .fondo-inicio {
     background-image: url('../assets/img/inicio_desktopFondo.png');
     background-size: cover;
@@ -88,17 +95,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 /* Navbar */
 
 .img-nav {
-    margin-right: 3%;
+    margin: 2px 3% 4px 0;
 }
 
 .navbar-brand {
     margin-right: auto;
     padding: 0 10px;
+    font-family: "Pacifico", cursive;
 }
 
 .navbar-nav {
@@ -111,8 +119,21 @@
     padding-left: 30px;
 }
 
+/* GLOBAL */
 
-/* Main (Titulos y parrafos) */
+h2, h3, h4, h5, h6, p {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0;
+}
+
+
+.centrado {
+    text-align: center;
+    width: 100%;
+}
+
+/* INICIO  */
 
 .flex-main {
     display: flex;
@@ -132,23 +153,6 @@ h1 {
     margin-top: 8%;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    color: white;
-    font-family: "Nunito", sans-serif;
-}
-
-
-.centrado {
-    text-align: center;
-    width: 100%;
-}
-
-
 .h2-inicio {
     background-color: white;
     text-transform: uppercase;
@@ -161,8 +165,6 @@ p {
     border-radius: 15px;
     margin: 3%;
 }
-
-
 
 /* Botones */
 
@@ -179,6 +181,31 @@ p {
     font-family: "Nunito", sans-serif;
 }
 
+/* Carta */
+
+.recuadro-carta {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 2px solid rgb(41, 43, 38);
+}
+
+.h3-carta {
+    margin: 7%;
+    margin-left: 0;
+}
+
+hr {
+    text-align: center;
+    color: white;
+    margin: 4% 0;
+}
+
+.boton-carta {
+    margin-top: 2%;
+}
+
+
 /* footer  */
 
 .footer p {
@@ -190,32 +217,25 @@ p {
 }
 
 
-
-/* Estructura tablet */
-
-/* @media (min-width: 768px) {
-    .layout {
-        grid-template-rows: minmax(70px, auto) 1fr minmax(70px, auto);
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-} */
-
-/* Estructura escritorio */
-
+/* Estructura Escriotrio */
 @media (min-width: 1024px) {
-    .layout {
-        grid-template-rows: minmax(80px, auto) 1fr minmax(80px, auto);
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
 
+
+    .img-nav {
+        width: 45px;
+        height: 40px
     }
 
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+    
+    /* inicio */
+    
     h1 {
         font-size: 45px;
         margin-top: 4%;
@@ -234,18 +254,8 @@ p {
         font-size: 18px;
     }
 
-    .img-nav {
-        width: 45px;
-        height: 40px
-    }
-
-    .navbar-brand {
-        font-size: 24px;
-    }
-
-    .nav-link {
-        font-size: 20px;
-    }
+    /* carta */
 
 
 }
+

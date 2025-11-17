@@ -4,56 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta</title>
+    <title>Proyecto Carrizo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body class="fondo-carta">
-    <header>
-        <img src="../assets/icons/logoCompleto.png" alt="Logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./restaurante.html">Restaurante</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./carta.html">Carta</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="layout">
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand bg-black" href="/index.html">
+                        <img src="/assets/icons/logo.png" alt="Logo" width="35" height="30"
+                            class="d-inline-block align-text-top img-nav"> Restaurante Don Fogón
+                    </a>
 
-    <main>
-        <div class="recuadro">
-            <h4>Carta</h4>
-            <br>
-            <h3>Descarga nuestras cartas</h3>
-            <hr><br>
-            <p>Menú</p>
-            <a href="">Descargar PDF</a>
-            <hr><br>
-            <p>Carta para grupos</p>
-            <a href="">Descargar PDF</a>
-            <hr><br>
-            <p>Eventos</p>
-            <a href="">Descargar PDF</a>
-            <hr><br>
-            <input type="button" value="Reservar mesa">
-        </div>
-    </main>
+                    <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <footer>
-        <p>&copy; Restaurante ensigna 2022 · Política de privacidad</p>
-    </footer>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active bg-black" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active bg-black" href="/pages/restaurante.html">Restaurante</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active bg-black" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active bg-black" href="/pages/carta.html">Carta</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active bg-black" href="/pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="recuadro-carta bg-black">
+                <h5>Carta</h5>
+                <h3 class="h3-carta">Descarga nuestras cartas</h3>
+                <hr>
+                <p>Menú</p>
+                <a href="">Descargar PDF</a>
+                <hr>
+                <p>Promo amigos</p>
+                <a href="">Descargar PDF</a>
+                <hr>
+                <p>Eventos</p>
+                   <a href="">Descargar PDF</a>
+                <hr>
+              <div class="centrado">
+                <a class="btn btn-warning boton-carta" href="../pages/contacto.html" role="button">Reservar Mesa</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; Restaurante Don Fogón 2025 · Política de privacidad</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
 </body>
 
 </html>
