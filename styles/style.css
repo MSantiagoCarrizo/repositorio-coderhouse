@@ -190,10 +190,13 @@ p {
 }
 
 .recuadro-especial {
+    width: 90%; 
+    max-width: 450px; 
     display: inline-flex;
     flex-direction: column;
     padding: 12px;
     border: 3px solid rgb(41, 43, 38);
+    margin: 3% auto;
 }
 
 .boton-especial {
@@ -213,9 +216,6 @@ hr {
     color: white;
     margin: 4% 0;
 }
-
-
-
 
 /* Contacto */
 
