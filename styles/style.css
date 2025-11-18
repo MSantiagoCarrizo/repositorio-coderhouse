@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');
-/* font-family: "Montserrat", sans-serif;   font-family: "Pacifico", cursive;   font-family: "Nunito", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');/* font-family: "Montserrat", sans-serif;   font-family: "Pacifico", cursive;   font-family: "Nunito", sans-serif;  font-family: "Domine", serif; */
 
 /* Estructura movil */
 
@@ -33,21 +32,6 @@
     align-items: center;
 }
 
-
-/* Ayuda visual  */
-/* .header {
-    border: 10px solid #e63946;
-}
-
-.main {
-    border: 10px solid #457b9d;
-}
-
-.footer {
-    border: 10px solid #fb8500;
-} */
-
-
 /* 
     ----------------------IMPORTANTE -------------------------------
     Poner hovers y pseudoclases a los links 
@@ -55,7 +39,6 @@
 
 
 /* fondos de pantalla*/
-
 
 .fondo-inicio {
     background-image: url('../assets/img/inicio_desktopFondo.png');
@@ -106,8 +89,8 @@
 
 .navbar-brand {
     margin-right: auto;
-    padding: 0 10px;
-    font-family: "Pacifico", cursive;
+    padding: 3px 8px;
+    font-weight: 500;
 }
 
 .navbar-nav {
@@ -172,12 +155,7 @@ h1 {
 
 /* GLOBAL */
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h2, h3, h4, h5, p {
     color: white;
     font-family: "Nunito", sans-serif;
     margin-bottom: 0;
@@ -202,20 +180,21 @@ p {
 .boton-especial {
     margin-top: 2%;
 }
-/* Carta */
-
-
 
 .h3-especial {
     margin: 7%;
     margin-left: 0;
 }
 
+
+/* Carta */
+
 hr {
     text-align: center;
     color: white;
     margin: 4% 0;
 }
+
 
 /* Contacto */
 
@@ -225,13 +204,13 @@ hr {
     margin: 2% 0;
 }
 
-.flex-contacto-uno {
+.flex-contacto-izquierdo {
     display: flex;
     flex-direction: column;
     gap: 5%;
 }
 
-.flex-contacto-dos {
+.flex-contacto-derecho {
     display: flex;
     flex-direction: column;
     gap: 5%;
@@ -290,8 +269,5 @@ hr {
     .boton-inicio {
         font-size: 18px;
     }
-
-    /* carta */
-
 
 }
