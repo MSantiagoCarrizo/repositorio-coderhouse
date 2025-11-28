@@ -1,0 +1,26 @@
+// BASE
+@use './partials/base/reset';
+@use './partials/base/fonts';
+
+
+// COMPONENTS
+@use './partials/components/layout';
+@use './partials/components/header';
+@use './partials/components/main';
+@use './partials/components/footer';
+@use './partials/components/global';
+
+
+// PAGINAS
+@use './partials/paginas/inicio';
+@use './partials/paginas/restauratne';
+@use './partials/paginas/nosotros';
+@use './partials/paginas/carta';
+@use './partials/paginas/contacto';
+
+
+// UTILITIES
+@use './partials/utilities/mixins';
+@use './partials/utilities/variables';
+@use './partials/utilities/extend';
+

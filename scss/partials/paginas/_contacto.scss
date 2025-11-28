@@ -1,0 +1,26 @@
+@use '../utilities/extend';
+@use '../utilities/variables';
+
+.fondo-contacto {
+    background-image: url('/assets/img/contacto_desktopFondo.png');
+    @extend%fondo;
+}
+
+.flex-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+
+    .flex-contacto-derecho {
+        @extend %flex-contacto;
+    }
+
+    .flex-contacto-izquierdo {
+        @extend %flex-contacto;
+    }
+}
+
+.i-redes {
+    color: variables.$blanco;
+    margin-left: 2%;
+}

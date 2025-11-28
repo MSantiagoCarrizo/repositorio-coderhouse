@@ -1,0 +1,12 @@
+@use '../utilities/extend';
+
+.fondo-carta {
+    background-image: url('/assets/img/carta_desktopFondo.png');
+    @extend%fondo;
+}
+
+hr {
+    text-align: center;
+    color: white;
+    margin: 4% 0;
+}

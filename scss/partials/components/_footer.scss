@@ -1,0 +1,14 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.footer {
+    grid-area: footer;
+    @include mixins.flex (auto, center, center);
+
+    p {
+        background-color: variables.$negro;
+        text-align: center;
+        margin: 2% auto;
+        display: inline-block;
+    }
+}

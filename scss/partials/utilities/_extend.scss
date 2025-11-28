@@ -1,0 +1,20 @@
+%fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+%flex-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+%centrado {
+    text-align: center;
+    width: 100%;
+} 
+
+%boton-especial {
+    margin-top: 2%;
+}

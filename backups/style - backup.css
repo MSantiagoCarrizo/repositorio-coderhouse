@@ -1,0 +1,272 @@
+
+/* Estructura movil */
+
+/* .layout {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/* 
+    ----------------------IMPORTANTE -------------------------------
+    Poner hovers y pseudoclases a los links 
+*/
+
+
+/* fondos de pantalla*/
+
+/* .fondo-inicio {
+    background-image: url('../assets/img/inicio_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-restaurante {
+    background-image: url('../assets/img/restaurante_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-nosotros {
+    background-image: url('../assets/img/nosotros_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-carta {
+    background-image: url('../assets/img/carta_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo-contacto {
+    background-image: url('../assets/img/contacto_desktopFondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+
+/* Navbar */
+
+/* .img-nav {
+    margin: 2px 3% 4px 0;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    padding: 3px 8px;
+    font-weight: 500;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    gap: 10px;
+}
+
+.nav-link {
+    border-radius: 20px;
+    padding-left: 30px;
+} */
+
+
+/* INICIO  */
+
+/* .flex-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+} */
+
+/* h1 {
+    color: rgb(247, 243, 12);
+    font-family: "Pacifico", cursive;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 3%;
+    margin-top: 8%;
+} 
+
+.h2-inicio {
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin: 3%;
+}*/
+
+
+/* Botones */
+
+/* .flex-botones-inicio {
+    display: inline-flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.boton-inicio {
+    border-radius: 26px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: "Nunito", sans-serif;
+} */
+
+/* GLOBAL */
+
+/* h2, h3, h4, h5, p {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0;
+}
+
+
+/* .centrado {
+    text-align: center;
+    width: 100%;
+} 
+
+.recuadro-especial {
+    width: 90%; 
+    max-width: 450px; 
+    display: inline-flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 3px solid rgb(41, 43, 38);
+    margin: 3% auto;
+}
+
+ .boton-especial {
+    margin-top: 2%;
+} 
+
+.h3-especial {
+    margin: 7%;
+    margin-left: 0;
+} */
+
+
+/* Carta */
+
+/* hr {
+    text-align: center;
+    color: white;
+    margin: 4% 0;
+} */
+
+
+/* Contacto */
+
+/* .flex-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.flex-contacto-izquierdo {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.flex-contacto-derecho {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+} 
+
+.i-redes {
+    color: white;
+    margin-left: 2%;
+}*/
+
+
+/* footer  */
+
+/* .footer p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 2% auto;
+    display: inline-block;
+} */
+
+
+/* Estructura Escriotrio */
+@media (min-width: 1024px) {
+
+
+    .img-nav {
+        width: 45px;
+        height: 40px
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    /* inicio */
+
+    h1 {
+        font-size: 45px;
+        margin-top: 4%;
+    }
+
+    .h2-inicio {
+        font-size: 60px;
+        padding: 10px 34px;
+    }
+
+    .flex-botones {
+        gap: 10%;
+    }
+
+    .boton-inicio {
+        font-size: 18px;
+    }
+
+}

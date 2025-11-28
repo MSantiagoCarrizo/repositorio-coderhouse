@@ -1,0 +1,15 @@
+@use '../base/fonts';
+@use '../utilities/extend';
+
+.flex-botones-inicio {
+    display: inline-flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.boton-inicio {
+    border-radius: 26px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: fonts.$nunito;
+}

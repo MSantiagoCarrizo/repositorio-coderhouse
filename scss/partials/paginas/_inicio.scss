@@ -1,0 +1,32 @@
+@use '../utilities/extend';
+@use '../base/fonts';
+@use '../utilities/variables';
+
+.fondo-inicio {
+    background-image: url('../assets/img/inicio_desktopFondo.png');
+    @extend%fondo;
+}
+
+h1 {
+    color: variables.$amarillo;
+    font-family: fonts.$pacifico;
+    background-color: variables.$negro-transparente;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: variables.$margin;
+    margin-top: 8%;
+} 
+
+.h2-inicio {
+    background-color: variables.$blanco;
+    text-transform: uppercase;
+    color: variables.$negro;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin: variables.$margin;
+}
