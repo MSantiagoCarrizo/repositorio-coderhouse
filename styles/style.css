@@ -1,273 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');/* font-family: "Montserrat", sans-serif;   font-family: "Pacifico", cursive;   font-family: "Nunito", sans-serif;  font-family: "Domine", serif; */
-
-/* Estructura movil */
-
-.layout {
-    display: grid;
-    height: 100vh;
-    gap: 10px;
-    grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.header {
-    grid-area: header;
+.fondo-contacto, .fondo-carta, .fondo-nosotros, .fondo-restaurante, .fondo-inicio {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.main {
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.flex-contacto .flex-contacto-derecho, .flex-contacto .flex-contacto-izquierdo {
+  display: flex;
+  flex-direction: column;
 }
-
-.footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 
-    ----------------------IMPORTANTE -------------------------------
-    Poner hovers y pseudoclases a los links 
-*/
-
-
-/* fondos de pantalla*/
-
-.fondo-inicio {
-    background-image: url('../assets/img/inicio_desktopFondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.fondo-restaurante {
-    background-image: url('../assets/img/restaurante_desktopFondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.fondo-nosotros {
-    background-image: url('../assets/img/nosotros_desktopFondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.fondo-carta {
-    background-image: url('../assets/img/carta_desktopFondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.fondo-contacto {
-    background-image: url('../assets/img/contacto_desktopFondo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-} */
-
-
-/* Navbar */
-
-.img-nav {
-    margin: 2px 3% 4px 0;
-}
-
-.navbar-brand {
-    margin-right: auto;
-    padding: 3px 8px;
-    font-weight: 500;
-}
-
-.navbar-nav {
-    margin-left: auto;
-    gap: 10px;
-}
-
-.nav-link {
-    border-radius: 20px;
-    padding-left: 30px;
-}
-
-
-/* INICIO  */
-
-.flex-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-}
-
-h1 {
-    color: rgb(247, 243, 12);
-    font-family: "Pacifico", cursive;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 8px;
-    margin: 3%;
-    margin-top: 8%;
-}
-
-.h2-inicio {
-    background-color: white;
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-    display: inline-block;
-    font-size: 40px;
-    font-weight: 900;
-    padding: 4px 12px;
-    border-radius: 15px;
-    margin: 3%;
-}
-
-
-/* Botones */
-
-.flex-botones-inicio {
-    display: inline-flex;
-    justify-content: center;
-    gap: 4%;
-}
-
-.boton-inicio {
-    border-radius: 26px;
-    text-transform: uppercase;
-    padding: 5px 20px;
-    font-family: "Nunito", sans-serif;
-}
-
-/* GLOBAL */
-
-h2, h3, h4, h5, p {
-    color: white;
-    font-family: "Nunito", sans-serif;
-    margin-bottom: 0;
-}
-
 
 .centrado {
-    text-align: center;
-    width: 100%;
-}
-
-.recuadro-especial {
-    width: 90%; 
-    max-width: 450px; 
-    display: inline-flex;
-    flex-direction: column;
-    padding: 12px;
-    border: 3px solid rgb(41, 43, 38);
-    margin: 3% auto;
+  text-align: center;
+  width: 100%;
 }
 
 .boton-especial {
-    margin-top: 2%;
+  margin-top: 2%;
+}
+
+.layout {
+  display: grid;
+  height: 100vh;
+  gap: 10px;
+  grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
+  grid-template-areas: "header" "main" "footer";
+}
+.layout .header {
+  grid-area: header;
+}
+.layout .main {
+  grid-area: main;
+}
+.layout .footer {
+  grid-area: footer;
+}
+
+.header {
+  grid-area: header;
+}
+.header .container-fluid {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.header .img-nav {
+  width: 35px;
+  height: 30px;
+  margin: 2px 3% 4px 0;
+}
+.header .navbar-brand {
+  margin-right: auto;
+  padding: 3px 8px;
+  font-weight: 500;
+}
+.header .navbar-nav {
+  margin-left: auto;
+  gap: 10px;
+}
+.header .nav-link {
+  border-radius: 20px;
+  padding-left: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .flex-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: auto;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  background-color: #000000;
+  text-align: center;
+  margin: 2% auto;
+  display: inline-block;
+}
+
+h2, h3, h4, h5, p {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 0;
+}
+
+.recuadro-especial {
+  width: 90%;
+  max-width: 450px;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 3px solid rgb(41, 43, 38);
+  margin: 3% auto;
 }
 
 .h3-especial {
-    margin: 7%;
-    margin-left: 0;
+  margin: 7%;
+  margin-left: 0;
 }
 
+.fondo-inicio {
+  background-image: url("../assets/img/inicio_desktopFondo.png");
+}
 
-/* Carta */
+h1 {
+  color: rgb(247, 243, 12);
+  font-family: "Pacifico", cursive;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 3%;
+  margin-top: 8%;
+}
+
+.h2-inicio {
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 15px;
+  margin: 3%;
+}
+
+.fondo-restaurante {
+  background-image: url("/assets/img/restaurante_desktopFondo.png");
+}
+
+.fondo-nosotros {
+  background-image: url("/assets/img/nosotros_desktopFondo.png");
+}
+
+.fondo-carta {
+  background-image: url("/assets/img/carta_desktopFondo.png");
+}
 
 hr {
-    text-align: center;
-    color: white;
-    margin: 4% 0;
+  text-align: center;
+  color: white;
+  margin: 4% 0;
 }
 
-
-/* Contacto */
+.fondo-contacto {
+  background-image: url("/assets/img/contacto_desktopFondo.png");
+}
 
 .flex-contacto {
-    display: flex;
-    justify-content: space-between;
-    margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
 }
-
-.flex-contacto-izquierdo {
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-}
-
-.flex-contacto-derecho {
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-}
-
 .i-redes {
-    color: white;
-    margin-left: 2%;
+  color: #fff;
+  margin-left: 2%;
 }
 
-
-/* footer  */
-
-.footer p {
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: 2% auto;
-    display: inline-block;
-}
-
-
-/* Estructura Escriotrio */
-@media (min-width: 1024px) {
-
-
-    .img-nav {
-        width: 45px;
-        height: 40px
-    }
-
-    .navbar-brand {
-        font-size: 24px;
-    }
-
-    .nav-link {
-        font-size: 20px;
-    }
-
-    /* inicio */
-
-    h1 {
-        font-size: 45px;
-        margin-top: 4%;
-    }
-
-    .h2-inicio {
-        font-size: 60px;
-        padding: 10px 34px;
-    }
-
-    .flex-botones {
-        gap: 10%;
-    }
-
-    .boton-inicio {
-        font-size: 18px;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
