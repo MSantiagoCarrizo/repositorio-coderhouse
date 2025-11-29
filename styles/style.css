@@ -121,6 +121,34 @@ h2, h3, h4, h5, p {
   margin-left: 0;
 }
 
+/* Estructura Escriotrio */
+@media (min-width: 1024px) {
+  .img-nav {
+    width: 45px;
+    height: 40px;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  /* inicio */
+  h1 {
+    font-size: 45px;
+    margin-top: 4%;
+  }
+  .h2-inicio {
+    font-size: 60px;
+    padding: 10px 34px;
+  }
+  .flex-botones {
+    gap: 10%;
+  }
+  .boton-inicio {
+    font-size: 18px;
+  }
+}
 .fondo-inicio {
   background-image: url("../assets/img/inicio_desktopFondo.png");
 }

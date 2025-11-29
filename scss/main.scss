@@ -9,6 +9,8 @@
 @use './partials/components/main';
 @use './partials/components/footer';
 @use './partials/components/global';
+// MEDIA QUERY
+@use './partials/components/querys';
 
 
 // PAGINAS
@@ -23,4 +25,6 @@
 @use './partials/utilities/mixins';
 @use './partials/utilities/variables';
 @use './partials/utilities/extend';
+
+
 
