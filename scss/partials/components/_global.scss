@@ -31,3 +31,7 @@ h2, h3, h4, h5, p {
 .boton-especial {
     @extend%boton-especial
 }
+
+a {
+    text-decoration: none;
+}

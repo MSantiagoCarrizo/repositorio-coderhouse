@@ -3,14 +3,10 @@
 @use './partials/base/fonts';
 
 
-// COMPONENTS
-@use './partials/components/layout';
-@use './partials/components/header';
-@use './partials/components/main';
-@use './partials/components/footer';
-@use './partials/components/global';
-// MEDIA QUERY
-@use './partials/components/querys';
+// UTILITIES
+@use './partials/utilities/mixins';
+@use './partials/utilities/variables';
+@use './partials/utilities/extend';
 
 
 // PAGINAS
@@ -21,10 +17,14 @@
 @use './partials/paginas/contacto';
 
 
-// UTILITIES
-@use './partials/utilities/mixins';
-@use './partials/utilities/variables';
-@use './partials/utilities/extend';
+// COMPONENTS
+@use './partials/components/layout';
+@use './partials/components/header';
+@use './partials/components/main';
+@use './partials/components/footer';
+@use './partials/components/global';
+@use './partials/components/buttons';
 
 
-
+// MEDIA QUERY
+@use './partials/components/querys';
