@@ -2,7 +2,7 @@
 @use '../utilities/variables';
 
 .fondo-contacto {
-    background-image: url('/assets/img/contacto_desktopFondo.png');
+    background-image: url('../assets/img/contacto_desktopFondo.png');
     @extend%fondo;
 }
 

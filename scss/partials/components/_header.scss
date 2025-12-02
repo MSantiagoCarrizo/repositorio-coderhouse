@@ -3,8 +3,6 @@
 @use '../utilities/mixins';
 
 .header {
-    grid-area: header;
-
     .container-fluid {
         @include mixins.flex (inherit, space-between, center);
         flex-wrap: wrap;

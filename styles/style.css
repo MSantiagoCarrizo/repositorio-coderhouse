@@ -25,66 +25,6 @@
   margin-top: 2%;
 }
 
-.fondo-inicio {
-  background-image: url("../assets/img/inicio_desktopFondo.png");
-}
-
-h1 {
-  color: rgb(247, 243, 12);
-  font-family: "Pacifico", cursive;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 8px;
-  margin: 3%;
-  margin-top: 8%;
-}
-
-.h2-inicio {
-  background-color: #fff;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 900;
-  padding: 4px 12px;
-  border-radius: 15px;
-  margin: 3%;
-}
-
-.fondo-restaurante {
-  background-image: url("/assets/img/restaurante_desktopFondo.png");
-}
-
-.fondo-nosotros {
-  background-image: url("/assets/img/nosotros_desktopFondo.png");
-}
-
-.fondo-carta {
-  background-image: url("/assets/img/carta_desktopFondo.png");
-}
-
-hr {
-  text-align: center;
-  color: white;
-  margin: 4% 0;
-}
-
-.fondo-contacto {
-  background-image: url("/assets/img/contacto_desktopFondo.png");
-}
-
-.flex-contacto {
-  display: flex;
-  justify-content: space-between;
-  margin: 2% 0;
-}
-.i-redes {
-  color: #fff;
-  margin-left: 2%;
-}
-
 .layout {
   display: grid;
   height: 100vh;
@@ -102,9 +42,6 @@ hr {
   grid-area: footer;
 }
 
-.header {
-  grid-area: header;
-}
 .header .container-fluid {
   display: flex;
   flex-direction: inherit;
@@ -198,6 +135,66 @@ a {
   text-transform: uppercase;
   padding: 5px 20px;
   font-family: "Nunito", sans-serif;
+}
+
+.fondo-inicio {
+  background-image: url("../assets/img/inicio_desktopFondo.png");
+}
+
+h1 {
+  color: rgb(247, 243, 12);
+  font-family: "Pacifico", cursive;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 3%;
+  margin-top: 8%;
+}
+
+.h2-inicio {
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 15px;
+  margin: 3%;
+}
+
+.fondo-restaurante {
+  background-image: url("../assets/img/restaurante_desktopFondo.png");
+}
+
+.fondo-nosotros {
+  background-image: url("../assets/img/nosotros_desktopFondo.png");
+}
+
+.fondo-carta {
+  background-image: url("../assets/img/carta_desktopFondo.png");
+}
+
+hr {
+  text-align: center;
+  color: white;
+  margin: 4% 0;
+}
+
+.fondo-contacto {
+  background-image: url("../assets/img/contacto_desktopFondo.png");
+}
+
+.flex-contacto {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.i-redes {
+  color: #fff;
+  margin-left: 2%;
 }
 
 /* Estructura Tablet */
