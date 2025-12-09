@@ -1,6 +1,6 @@
 @use '../utilities/extend';
 
 .fondo-restaurante {
-    background-image: url('../assets/img/restaurante_desktopFondo.png');
+    background-image: url('../assets/img/restaurante_desktopFondo.jpg');
     @extend%fondo;
 }

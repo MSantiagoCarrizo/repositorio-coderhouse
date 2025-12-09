@@ -3,7 +3,7 @@
 @use '../utilities/variables';
 
 .fondo-inicio {
-    background-image: url('../assets/img/inicio_desktopFondo.png');
+    background-image: url('../assets/img/inicio_desktopFondo.jpg');
     @extend%fondo;
 }
 
@@ -16,7 +16,7 @@ h1 {
     border-radius: 8px;
     margin: variables.$margin;
     margin-top: 8%;
-} 
+}
 
 .h2-inicio {
     background-color: variables.$blanco;
