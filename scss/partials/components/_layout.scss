@@ -2,7 +2,6 @@
 
 .layout {
     display: grid;
-    height: 100vh;
     gap: 10px;
     grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
     grid-template-areas:
@@ -10,15 +9,15 @@
         "main"
         "footer";
 
-    .header {
+    header {
         grid-area: header;
     }
 
-    .main {
+    main {
         grid-area: main;
     }
     
-    .footer {
+    footer {
         grid-area: footer;
     }
 }

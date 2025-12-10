@@ -1,11 +1,11 @@
 @use '../utilities/mixins';
 
-.main {
+main {
     @include mixins.flex(column, center, center);
 
     .flex-main {
         @include mixins.flex(column, center, center);
-        gap: 50px;
+        gap: 30px;
     }
     
 }

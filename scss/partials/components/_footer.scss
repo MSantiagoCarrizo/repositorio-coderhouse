@@ -1,7 +1,7 @@
 @use '../utilities/mixins';
 @use '../utilities/variables';
 
-.footer {
+footer {
     grid-area: footer;
     @include mixins.flex (auto, center, center);
 

@@ -13,24 +13,30 @@ h2, h3, h4, h5, p {
 } 
 
 .recuadro-especial {
-    width: 90%; 
-    max-width: 450px; 
-    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 96%; 
+    display: flex;
     flex-direction: column;
     padding: 12px;
-    // 
     border: 3px solid rgb(41, 43, 38);
-    margin: variables.$margin auto;
 }
 
-.h3-especial {
+h5 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 32px;
     margin: 7%;
     margin-left: 0;
+    text-decoration: underline;
 }
 
-.boton-especial {
-    @extend%boton-especial
+p {
+    font-size: 22px;
 }
+
+
 
 a {
     text-decoration: none;

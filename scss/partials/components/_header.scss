@@ -2,7 +2,7 @@
 @use '../base/fonts';
 @use '../utilities/mixins';
 
-.header {
+header {
     .container-fluid {
         @include mixins.flex (inherit, space-between, center);
         flex-wrap: wrap;
@@ -13,7 +13,7 @@
     .img-nav {
         width: 35px;
         height: 30px;
-        margin: 2px 3% 4px 0;
+        margin: 2px 3% 4px 20px;
     }
 
     .navbar-brand {
