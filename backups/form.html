@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body class="fondo-inicio">
+<body class="fondo-inicio"> 
     <div class="layout">
         <header>
             <nav class="navbar navbar-expand-md navbar-dark ">
@@ -56,56 +56,85 @@
         </header>
 
         <main>
+                        <div class="recuadro-especial bg-black animate__animated animate__fadeIn">
+
             <h3>Reservar Mesa</h3>
             <form action="/submit" method="post">
+                <div class="flex-contacto">
+                    <div class="flex-contacto-izquierdo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-<br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-<br>
-
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="mail" required>
-
-<br>
-
-                <label for="telefono">Teléfono (opcional):</label>
-                <input type="tel" id="telefono" name="telefono">
-<br>
-
-                <label for="asunto">Asunto:</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="reserva">Reserva</option>
-                    <option value="consulta_menu">Consulta sobre el menú</option>
-                    <option value="queja">Queja o sugerencia</option>
-                    <option value="otros">Otros</option>
-                </select>
-<br>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
-<br>
-
-                <label for="fecha">Fecha de la reserva:</label>
-                <input type="date" id="fecha" name="fecha">
-<br>
-
-                <label for="hora">Hora de la reserva:</label>
-                <input type="time" id="hora" name="hora">
-
-<br>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="mail" required>
 
 
-                <input type="checkbox" id="acepto" name="acepto" required>
-                <label for="acepto">Acepto la <a href="/politica-privacidad" target="_blank">política de
-                        privacidad</a></label>
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="flex-contacto-derecho">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="reserva">Reserva</option>
+                            <option value="consulta_menu">Consulta sobre el menú</option>
+                            <option value="queja">Queja o sugerencia</option>
+                            <option value="otros">Otros</option>
+                        </select>
 
-<br>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+
+                        <label for="fecha">Fecha de la reserva:</label>
+                        <input type="date" id="fecha" name="fecha">
+
+                        <label for="hora">Hora de la reserva:</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto la <a href="/politica-privacidad" target="_blank">política de
+                            privacidad</a></label>
+                </div>
 
                 <input type="submit" value="Enviar">
             </form>
+
+
+
+
+
+
+            
+            <div class="recuadro-especial bg-black animate__animated animate__fadeIn">
+                <h5>Horarios</h5>
+                <p>De Lunes a Domingo de 8:00hs a 23:00hs</p>
+                <hr>
+                <h4>Dirección</h4>
+                <a href="https://maps.app.goo.gl/2vAZSoxCatB3S8yv8">Calle Cualquiera 123, Cualquier Lugar, CP: 12345</a>
+
+                <div class="flex-contacto">
+                    <div class="flex-contacto-izquierdo">
+                        <h4>Teléfono</h4>
+                        <a href="tel:+11-1234-4321">11-1234-4321</a>
+                    </div>
+                    <div class="flex-contacto-derecho">
+                        <h4>Email</h4>
+                        <a href="mailto:ejemplo@gmail.com">ejemplo@gmail.com</i></a>
+                    </div>
+                </div>
+
+                <h4>Redes</h4>
+                <div>
+                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp i-redes"></i></a>
+                    <a href="https://www.facebook.com/?locale=es_LA"><i class="bi bi-facebook i-redes"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram i-redes"></i></a>
+                </div>
+
+            </div>
         </main>
 
         <footer>

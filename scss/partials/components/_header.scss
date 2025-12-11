@@ -13,7 +13,7 @@ header {
     .img-nav {
         width: 35px;
         height: 30px;
-        margin: 2px 3% 4px 20px;
+        margin: 2px 3% 4px 2px;
     }
 
     .navbar-brand {
@@ -22,14 +22,21 @@ header {
         font-weight: 500;
         border-radius: 10px;
         padding-right: 12px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-toggler {
+        background: rgba(0, 0, 0, 0.7);
     }
 
     .navbar-nav {
+
         margin-left: auto;
         gap: 10px;
     }
 
     .nav-link {
+        background: rgba(0, 0, 0, 0.7);
         border-radius: 20px;
         padding-left: 30px;
     }

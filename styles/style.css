@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 
-.centrado {
+.centrado, h5 {
   text-align: center;
   width: 100%;
 }
@@ -24,6 +24,7 @@
 .boton-especial {
   margin-top: 2%;
 }
+
 
 .layout {
   display: grid;
@@ -52,7 +53,7 @@ header .container-fluid {
 header .img-nav {
   width: 35px;
   height: 30px;
-  margin: 2px 3% 4px 20px;
+  margin: 2px 3% 4px 2px;
 }
 header .navbar-brand {
   margin-right: auto;
@@ -60,12 +61,17 @@ header .navbar-brand {
   font-weight: 500;
   border-radius: 10px;
   padding-right: 12px;
+  background: rgba(0, 0, 0, 0.7);
+}
+header .navbar-toggler {
+  background: rgba(0, 0, 0, 0.7);
 }
 header .navbar-nav {
   margin-left: auto;
   gap: 10px;
 }
 header .nav-link {
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   padding-left: 30px;
 }
@@ -100,7 +106,7 @@ footer p {
 
 h2, h3, h4, h5, p {
   color: white;
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
   margin-bottom: 0;
 }
 
@@ -114,14 +120,15 @@ h2, h3, h4, h5, p {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 26px;
+  font-family: "Playfair Display SC", serif;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 30px;
   margin: 7%;
   margin-left: 0;
-  text-decoration: underline;
+  font-family: "Playfair Display SC", serif;
 }
 
 p {
@@ -145,7 +152,6 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   padding: 5px 20px;
-  font-family: "Nunito", sans-serif;
 }
 
 .boton-especial {
@@ -157,9 +163,9 @@ a {
 }
 
 h1 {
-  color: rgb(247, 243, 12);
-  font-family: "Pacifico", cursive;
-  background-color: rgba(0, 0, 0, 0.7);
+  color: #F3E9D2;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #5C3B24;
   display: inline-block;
   padding: 4px 8px;
   border-radius: 8px;

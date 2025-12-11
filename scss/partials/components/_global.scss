@@ -2,9 +2,9 @@
 @use '../utilities/variables';
 @use '../utilities/extend';
 
-h2, h3, h4, h5, p {
+h2, h3, h4, h5, p{
     color: white;
-    font-family: fonts.$nunito; 
+    font-family: fonts.$Lato; 
     margin-bottom: 0;
 }
 
@@ -22,20 +22,21 @@ h2, h3, h4, h5, p {
 }
 
 h5 {
-    font-size: 24px;
+    font-size: 26px;
+    font-family: fonts.$Playfair;
+    @extend%centrado;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 7%;
     margin-left: 0;
-    text-decoration: underline;
+    font-family: fonts.$Playfair ;
 }
 
 p {
     font-size: 22px;
 }
-
 
 
 a {
