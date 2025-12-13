@@ -1,26 +1,49 @@
 @use '../utilities/extend';
-@use '../utilities/variables';
+@use '../utilities/mixins';
+@use '../base/fonts';
 
 .fondo-contacto {
     background-image: url('../assets/img/contacto_desktopFondo.jpg');
     @extend%fondo;
 }
 
-.flex-contacto {
+
+.fondo-marron {
+    background-color: #5C3B24;
+    padding: 6px 10px;
+    border: 2px solid #9b6239;
+    margin: 10px auto;
+}
+
+label {
+    color: white;
+    font-size: 24px;
+    font-family: fonts.$Cormorant; 
+}
+
+input {
+    border: 2px solid rgb(100, 97, 97);
+}
+
+.flex-form {
     display: flex;
-    justify-content: space-between;
-    margin: 2% 0;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
 
-    .flex-contacto-derecho {
-        @extend %flex-contacto;
-    }
-
-    .flex-contacto-izquierdo {
-        @extend %flex-contacto;
+    .form-grupo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin: 6px auto;
     }
 }
 
-.i-redes {
-    color: variables.$blanco;
-    margin-left: 2%;
+.checkbox {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

@@ -56,56 +56,61 @@
         </header>
 
         <main>
-            <h3>Reservar Mesa</h3>
-            <form action="/submit" method="post">
+            <div class="recuadro-especial animate__animated animate__fadeIn">
+                <h3 class="fondo-marron">Reservar Mesa</h3>
+                <form>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-<br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-<br>
+                    <div class="flex-form">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="mail" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="telefono">Teléfono (opcional):</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-grupo">
+                            <label for="asunto">Asunto:</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="reserva">Reserva</option>
+                                <option value="consulta_menu">Consulta sobre el menú</option>
+                                <option value="queja">Queja o sugerencia</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="fecha">Fecha de la reserva:</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                        <div class="form-grupo">
+                            <label for="hora">Hora de la reserva:</label>
+                            <input type="time" id="hora" name="hora">
+                        </div>
+                        
 
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="mail" required>
+                        <div class="checkbox">
+                            <label for="acepto">Acepto la política de privacidad</label>
+                            <input class="form-check-input" type="checkbox" id="acepto" name="acepto" required>
+                        </div>
 
-<br>
+                        <button class="btn btn-light" type="submit" value="Enviar">Enviar</button>
 
-                <label for="telefono">Teléfono (opcional):</label>
-                <input type="tel" id="telefono" name="telefono">
-<br>
+                    </div>
 
-                <label for="asunto">Asunto:</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="reserva">Reserva</option>
-                    <option value="consulta_menu">Consulta sobre el menú</option>
-                    <option value="queja">Queja o sugerencia</option>
-                    <option value="otros">Otros</option>
-                </select>
-<br>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
-<br>
-
-                <label for="fecha">Fecha de la reserva:</label>
-                <input type="date" id="fecha" name="fecha">
-<br>
-
-                <label for="hora">Hora de la reserva:</label>
-                <input type="time" id="hora" name="hora">
-
-<br>
-
-
-                <input type="checkbox" id="acepto" name="acepto" required>
-                <label for="acepto">Acepto la <a href="/politica-privacidad" target="_blank">política de
-                        privacidad</a></label>
-
-<br>
-
-                <input type="submit" value="Enviar">
-            </form>
+                </form>
+            </div>
         </main>
 
         <footer>

@@ -32,3 +32,22 @@ h2 {
     border-radius: 15px;
     margin: variables.$margin;
 }
+
+.flex-inicio {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+
+    .flex-inicio-derecho {
+        @extend %flex-inicio;
+    }
+
+    .flex-inicio-izquierdo {
+        @extend %flex-inicio;
+    }
+}
+
+.i-redes {
+    color: variables.$blanco;
+    margin-left: 2%;
+}
