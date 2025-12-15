@@ -8,11 +8,10 @@
 }
 
 h1 {
-    // color: variables.$amarillo;
     color: #F3E9D2;
     font-family: fonts.$Cormorant;
-    // background-color: variables.$negro-transparente;
-    background-color: #5C3B24;
+    background-color: variables.$marron;
+    border: 2px solid variables.$borde-marron;
     display: inline-block;
     padding: 4px 8px;
     border-radius: 8px;
@@ -34,8 +33,8 @@ h2 {
 }
 
 .espacio {
-    
-    text-align: center;
+    @extend %flex-inicio;
+    gap: 16px;
 }
 
 .flex-inicio {

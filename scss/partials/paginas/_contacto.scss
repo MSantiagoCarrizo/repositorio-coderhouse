@@ -1,5 +1,6 @@
 @use '../utilities/extend';
 @use '../utilities/mixins';
+@use '../utilities/variables';
 @use '../base/fonts';
 
 .fondo-contacto {
@@ -9,7 +10,7 @@
 
 
 .fondo-marron {
-    background-color: #5C3B24;
+    background-color: variables.$marron;
     padding: 6px 10px;
     border: 2px solid #9b6239;
     margin: 10px auto;
