@@ -11,9 +11,11 @@
   background-attachment: fixed;
 }
 
-.flex-inicio .flex-inicio-derecho, .flex-inicio .flex-inicio-izquierdo {
+.flex-inicio .flex-inicio-izquierdo, .flex-inicio .flex-inicio-derecho {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 0 4px;
 }
 
 .centrado, h5 {
@@ -141,10 +143,11 @@ a {
 
 .flex-botones-inicio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .boton-inicio {
@@ -186,14 +189,24 @@ h2 {
   margin: 3%;
 }
 
+.espacio {
+  text-align: center;
+}
+
 .flex-inicio {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
   margin: 2% 0;
 }
 .i-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.i-redes .bi {
+  font-size: 20px;
   color: #fff;
-  margin-left: 2%;
+  margin: 2%;
 }
 
 .fondo-restaurante {
