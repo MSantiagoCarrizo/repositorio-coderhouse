@@ -4,6 +4,7 @@
 footer {
     grid-area: footer;
     @include mixins.flex (auto, center, center);
+    margin-top: 16%;
 
     p {
         background-color: variables.$negro;

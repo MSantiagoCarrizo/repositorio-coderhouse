@@ -1,4 +1,5 @@
 @use '../utilities/extend';
+@use '../utilities/variables';
 
 .fondo-carta {
     background-image: url('../assets/img/carta_desktopFondo.jpg');
@@ -7,10 +8,11 @@
 
 hr {
     text-align: center;
-    color: white;
+    color: variables.$blanco;
 }
 
 .img-carta {
     width: 100%;
     height: auto;
+    margin-top: 14px;
 }

@@ -97,6 +97,7 @@ footer {
   flex-direction: auto;
   justify-content: center;
   align-items: center;
+  margin-top: 16%;
 }
 footer p {
   background-color: #000000;
@@ -147,7 +148,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20%;
 }
 
 .boton-inicio {
@@ -177,6 +178,7 @@ h1 {
   border-radius: 8px;
   margin: 3%;
   margin-top: 8%;
+  font-size: 33px;
 }
 
 h2 {
@@ -195,12 +197,30 @@ h2 {
 .espacio {
   gap: 16px;
 }
+.espacio a {
+  color: #fff;
+}
+.espacio h4 {
+  text-decoration: underline;
+}
 
 .flex-inicio {
   display: flex;
   gap: 24px;
   margin: 2% 0;
 }
+.flex-inicio a {
+  color: #fff;
+}
+.flex-inicio .flex-inicio-izquierdo h4 {
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+.flex-inicio .flex-inicio-derecho h4 {
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+
 .i-redes {
   display: flex;
   flex-direction: row;
@@ -234,12 +254,13 @@ h2 {
 
 hr {
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 .img-carta {
   width: 100%;
   height: auto;
+  margin-top: 14px;
 }
 
 .fondo-contacto {

@@ -17,6 +17,8 @@ h1 {
     border-radius: 8px;
     margin: variables.$margin;
     margin-top: 8%;
+    font-size: 33px;
+
 }
 
 h2 {
@@ -35,19 +37,30 @@ h2 {
 .espacio {
     @extend %flex-inicio;
     gap: 16px;
+    a {color: variables.$blanco;}
+    h4 {text-decoration: underline;}
 }
 
 .flex-inicio {
     display: flex;
     gap: 24px;
     margin: 2% 0;
+    a {color: variables.$blanco;}
 
     .flex-inicio-izquierdo {
         @extend %flex-inicio;
+        h4 {
+            text-decoration: underline;
+            margin-bottom: 4px;
+        }
     }
     
     .flex-inicio-derecho {
         @extend %flex-inicio;
+        h4 {
+            text-decoration: underline;
+            margin-bottom: 4px;
+        }
     }
 
 }
