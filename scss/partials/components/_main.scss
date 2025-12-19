@@ -2,6 +2,8 @@
 
 main {
     @include mixins.flex(column, center, center);
+    margin-top: 6%;
+
 
     .flex-main {
         @include mixins.flex(column, center, center);

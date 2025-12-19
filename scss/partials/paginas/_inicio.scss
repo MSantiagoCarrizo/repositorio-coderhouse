@@ -27,7 +27,7 @@ h2 {
     color: variables.$negro;
     text-align: center;
     display: inline-block;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 900;
     padding: 4px 12px;
     border-radius: 15px;
@@ -38,7 +38,6 @@ h2 {
     @extend %flex-inicio;
     gap: 16px;
     a {color: variables.$blanco;}
-    h4 {text-decoration: underline;}
 }
 
 .flex-inicio {
@@ -50,16 +49,14 @@ h2 {
     .flex-inicio-izquierdo {
         @extend %flex-inicio;
         h4 {
-            text-decoration: underline;
-            margin-bottom: 4px;
+            margin-bottom: variables.$margin;
         }
     }
     
     .flex-inicio-derecho {
         @extend %flex-inicio;
         h4 {
-            text-decoration: underline;
-            margin-bottom: 4px;
+            margin-bottom: variables.$margin;
         }
     }
 
@@ -69,10 +66,9 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 24px;
-
+    
     .bi {
         font-size: 20px;
         color: variables.$blanco;
-        margin: 2%;
     }
 }

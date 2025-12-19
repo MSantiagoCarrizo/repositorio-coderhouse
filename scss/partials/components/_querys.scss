@@ -1,29 +1,41 @@
-/* Estructura Tablet */
+@media (min-width: 768px) {
 
-@media (min-width: 768px) and (max-width: 1024px) {
+    // HEADER
+    .navbar {
 
-    .img-nav {
-        width: 45px;
-        height: 40px;
+        .navbar-brand {
+            font-size: 20px;
+
+            .img-nav {
+                width: 40px;
+                height: 35px;
+            }
+        }
+
+        .nav-link {
+            font-size: 18px;
+
+        }
     }
 
-    .navbar-brand {
-        font-size: 18px;
-    }
 
-    .nav-link {
-        font-size: 18px;
-    }
+    // FOOTER
 
-    /* inicio */
-
-    h1 {
-        font-size: 40px;
+    footer {
         margin-top: 10%;
     }
 
-    .h2-inicio {
-        font-size: 48px;
+
+    // INICIO
+
+    h1 {
+        font-size: 40px;
+        margin-top: 9%;
+        padding: 5px 10px;
+    }
+
+    h2 {
+        font-size: 53px;
         padding: 10px 18px;
     }
 
@@ -35,29 +47,100 @@
         font-size: 20px;
     }
 
+    .i-redes {
+        margin-top: 1%;
+
+        .bi {
+            font-size: 26px;
+        }
+    }
+
+    // GLOBAL
+
+    h5 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin: 7% 0;
+    }
+
+    h4 {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    // BOTON
+
+    .boton-especial {
+        font-size: 24px;
+        margin: 3%;
+    }
+
+    // NOSOTROS
+
+    .img-ramirez {
+        width: 260px;
+        height: 355px;
+        border: 3px solid rgb(41, 43, 38);
+        float: right;
+        margin: 10px 0 10px 18px;
+
+    }
+
+    // CONTACTO
+
+    .fondo-marron {
+        padding: 8px 14px;
+        border: 4px solid #9b6239;
+    }
+
+    label {
+        font-size: 28px;
+    }
+
 }
 
 
 
-/* Estructura Escritorio */
+// @media (min-width: 1024px) {
+//     
+
+// }
+
+
+
 
 
 @media (min-width: 1024px) {
 
+    // NAVBAR
 
-    .img-nav {
-        width: 45px;
-        height: 40px
-    }
+    .navbar {
+        padding: 20px 40px;
 
-    .navbar-brand {
-        font-size: 26px;
-    }
+        .navbar-brand {
+            font-size: 28px;
 
-    .nav-link {
-        font-size: 22px;
-        
-    }
+            .img-nav {
+                width: 48px;
+                height: 44px;
+            }
+        }
+
+        .nav-link {
+            font-size: 24px;
+        }
+    }    
 
     a:hover {
         transform: translateY(-3px);
@@ -91,16 +174,12 @@
         font-size: 20px;
     }
 
-    /*.recuadro-especial {
-        max-width: 566px;
-        padding: 16px;
-        border: 6px solid rgb(41, 43, 38);
-    }*/
+    
 
     .img-ramirez {
-    width: 600px;
-    border-radius: 15%;
-}
+        width: 600px;
+        border-radius: 15%;
+    }
 
     .h3-especial {
         margin: 4%;

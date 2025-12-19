@@ -3,7 +3,7 @@
 @use '../utilities/extend';
 
 h2, h3, h4, h5, p {
-    color: white;
+    color: variables.$blanco;
     font-family: fonts.$Lato; 
     margin-bottom: 0;
 }
@@ -28,10 +28,14 @@ h5 {
     @extend%centrado;
 }
 
+h4 {
+        text-decoration: underline;
+
+}
+
 h3 {
     font-size: 30px;
-    margin: 7%;
-    margin-left: 0;
+    margin: 7% 0;
     font-family: fonts.$Playfair ;
 }
 

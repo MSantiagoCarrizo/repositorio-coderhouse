@@ -3,7 +3,7 @@
 
 footer {
     grid-area: footer;
-    @include mixins.flex (auto, center, center);
+    @include mixins.flex (row, center, center);
     margin-top: 16%;
 
     p {

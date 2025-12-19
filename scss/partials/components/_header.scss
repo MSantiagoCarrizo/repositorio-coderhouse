@@ -1,43 +1,51 @@
 @use './layout';
 @use '../base/fonts';
 @use '../utilities/mixins';
+@use '../utilities/variables';
 
 header {
-    .container-fluid {
-        @include mixins.flex (inherit, space-between, center);
-        flex-wrap: wrap;
-        gap: 4px;
-    }
+    // .container-fluid {
+    //     @include mixins.flex (inherit, space-between, center);
+    //     flex-wrap: wrap;
+    //     gap: 4px;
+    //     margin: 0;
+    // }
 
     // NAV
-    .img-nav {
-        width: 35px;
-        height: 30px;
-        margin: 2px 3% 4px 2px;
-    }
+
 
     .navbar-brand {
+        display: flex;
+        align-items: center;
         margin-right: auto;
         padding: 3px 8px;
         font-weight: 500;
         border-radius: 10px;
-        padding-right: 12px;
-        background: rgba(0, 0, 0, 0.7);
+        padding-right: 16px;
+        background: variables.$negro-transparente;
+
+        .img-nav {
+            width: 35px;
+            height: 30px;
+            margin: 2px 3% 4px 2px;
+        }
     }
 
     .navbar-toggler {
-        background: rgba(0, 0, 0, 0.7);
+        background: variables.$negro-transparente;
     }
 
     .navbar-nav {
 
         margin-left: auto;
         gap: 10px;
+
+        .nav-link {
+        background: variables.$negro-transparente;
+            border-radius: 20px;
+            padding-left: 30px;
+        }
     }
 
-    .nav-link {
-        background: rgba(0, 0, 0, 0.7);
-        border-radius: 20px;
-        padding-left: 30px;
-    }
+
 }

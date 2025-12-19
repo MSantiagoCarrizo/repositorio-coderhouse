@@ -43,26 +43,20 @@
   grid-area: footer;
 }
 
-header .container-fluid {
-  display: flex;
-  flex-direction: inherit;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-header .img-nav {
-  width: 35px;
-  height: 30px;
-  margin: 2px 3% 4px 2px;
-}
 header .navbar-brand {
+  display: flex;
+  align-items: center;
   margin-right: auto;
   padding: 3px 8px;
   font-weight: 500;
   border-radius: 10px;
-  padding-right: 12px;
+  padding-right: 16px;
   background: rgba(0, 0, 0, 0.7);
+}
+header .navbar-brand .img-nav {
+  width: 35px;
+  height: 30px;
+  margin: 2px 3% 4px 2px;
 }
 header .navbar-toggler {
   background: rgba(0, 0, 0, 0.7);
@@ -71,7 +65,7 @@ header .navbar-nav {
   margin-left: auto;
   gap: 10px;
 }
-header .nav-link {
+header .navbar-nav .nav-link {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   padding-left: 30px;
@@ -82,6 +76,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 6%;
 }
 main .flex-main {
   display: flex;
@@ -94,7 +89,7 @@ main .flex-main {
 footer {
   grid-area: footer;
   display: flex;
-  flex-direction: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 16%;
@@ -107,7 +102,7 @@ footer p {
 }
 
 h2, h3, h4, h5, p {
-  color: white;
+  color: #fff;
   font-family: "Lato", sans-serif;
   margin-bottom: 0;
 }
@@ -127,10 +122,13 @@ h5 {
   font-family: "Playfair Display SC", serif;
 }
 
+h4 {
+  text-decoration: underline;
+}
+
 h3 {
   font-size: 30px;
-  margin: 7%;
-  margin-left: 0;
+  margin: 7% 0;
   font-family: "Playfair Display SC", serif;
 }
 
@@ -187,7 +185,7 @@ h2 {
   color: #000000;
   text-align: center;
   display: inline-block;
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 900;
   padding: 4px 12px;
   border-radius: 15px;
@@ -200,9 +198,6 @@ h2 {
 .espacio a {
   color: #fff;
 }
-.espacio h4 {
-  text-decoration: underline;
-}
 
 .flex-inicio {
   display: flex;
@@ -213,12 +208,10 @@ h2 {
   color: #fff;
 }
 .flex-inicio .flex-inicio-izquierdo h4 {
-  text-decoration: underline;
-  margin-bottom: 4px;
+  margin-bottom: 3%;
 }
 .flex-inicio .flex-inicio-derecho h4 {
-  text-decoration: underline;
-  margin-bottom: 4px;
+  margin-bottom: 3%;
 }
 
 .i-redes {
@@ -229,7 +222,6 @@ h2 {
 .i-redes .bi {
   font-size: 20px;
   color: #fff;
-  margin: 2%;
 }
 
 .fondo-restaurante {
@@ -275,7 +267,7 @@ hr {
 }
 
 label {
-  color: white;
+  color: #fff;
   font-size: 24px;
   font-family: "Cormorant Garamond", serif;
 }
@@ -306,25 +298,27 @@ input {
   gap: 10px;
 }
 
-/* Estructura Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .img-nav {
-    width: 45px;
-    height: 40px;
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 20px;
   }
-  .navbar-brand {
+  .navbar .navbar-brand .img-nav {
+    width: 40px;
+    height: 35px;
+  }
+  .navbar .nav-link {
     font-size: 18px;
   }
-  .nav-link {
-    font-size: 18px;
-  }
-  /* inicio */
-  h1 {
-    font-size: 40px;
+  footer {
     margin-top: 10%;
   }
-  .h2-inicio {
-    font-size: 48px;
+  h1 {
+    font-size: 40px;
+    margin-top: 9%;
+    padding: 5px 10px;
+  }
+  h2 {
+    font-size: 53px;
     padding: 10px 18px;
   }
   .flex-botones-inicio {
@@ -333,18 +327,61 @@ input {
   .boton-inicio {
     font-size: 20px;
   }
-}
-/* Estructura Escritorio */
-@media (min-width: 1024px) {
-  .img-nav {
-    width: 45px;
-    height: 40px;
+  .i-redes {
+    margin-top: 1%;
   }
-  .navbar-brand {
+  .i-redes .bi {
     font-size: 26px;
   }
-  .nav-link {
-    font-size: 22px;
+  h5 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 32px;
+    margin: 7% 0;
+  }
+  h4 {
+    font-size: 28px;
+    margin-bottom: 3px;
+  }
+  p {
+    font-size: 25px;
+  }
+  a {
+    font-size: 24px;
+  }
+  .boton-especial {
+    font-size: 24px;
+    margin: 3%;
+  }
+  .img-ramirez {
+    width: 260px;
+    height: 355px;
+    border: 3px solid rgb(41, 43, 38);
+    float: right;
+    margin: 10px 0 10px 18px;
+  }
+  .fondo-marron {
+    padding: 8px 14px;
+    border: 4px solid #9b6239;
+  }
+  label {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  .navbar .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar .navbar-brand .img-nav {
+    width: 48px;
+    height: 44px;
+  }
+  .navbar .nav-link {
+    font-size: 24px;
   }
   a:hover {
     transform: translateY(-3px);
@@ -369,11 +406,6 @@ input {
   p {
     font-size: 20px;
   }
-  /*.recuadro-especial {
-      max-width: 566px;
-      padding: 16px;
-      border: 6px solid rgb(41, 43, 38);
-  }*/
   .img-ramirez {
     width: 600px;
     border-radius: 15%;
