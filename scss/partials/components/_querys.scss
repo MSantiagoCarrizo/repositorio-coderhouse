@@ -1,8 +1,9 @@
 // QUERY TABLET
-// @media (min-width: 768px) {
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     // HEADER
+
     .navbar {
 
         .navbar-brand {
@@ -104,6 +105,20 @@
         border: 3px solid rgb(41, 43, 38);
         float: right;
         margin: 10px 0 10px 18px;
+    }
+
+
+
+    // CARTA
+
+    .p-especial {
+        font-size: 23px;
+        margin: 2% 0;
+        text-decoration: none;
+    }
+
+    .img-carta {
+        width: 80%;
     }
 
 
@@ -254,20 +269,17 @@
 
     // CARTA 
 
-    .flex-carta-izquierda {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        
-        .img-carta {
-            width: 540px;
-            height: 800px;
-        }
+    .img-carta {
+        width: 80%;
     }
-// falta la cartaaaaaaaaaaa
 
-    
+    .p-especial {
+        font-size: 22px;
+        padding: 0 10%;
+    }
+
+
+
     // CONTACTO
 
     .fondo-marron {
@@ -278,9 +290,41 @@
     label {
         font-size: 38px;
     }
-    
+
     input {
         font-size: 24px;
+    }
+
+}
+
+
+// QUERY SOLO MODIFICA CARTA
+
+
+@media (min-width: 1200px) {
+
+    .flex-carta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4% 0;
+
+        .img-carta {
+            width: 540px;
+            height: 800px;
+            margin-left: 3%;
+        }
+
+    }
+
+    .carta-diferente {
+        flex-direction: row-reverse;
+
+        .img-carta {
+            margin-right: 3%;
+
+        }
     }
 
 }
